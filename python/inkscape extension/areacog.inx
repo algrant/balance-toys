@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <_name>Area and CoG</_name>
+    <id>org.algrant.physics.areacog</id>
+	<dependency type="executable" location="extensions">areacog.py</dependency>
+	<dependency type="executable" location="extensions">inkex.py</dependency>
+	<param name="magnitude" type="float" min="0" max="1000" _gui-text="Magnitude">100</param>
+	<param name="angle" type="float" min="0.0" max="360.0" _gui-text="Angle">45</param>
+    <effect>
+		<object-type>path</object-type>
+                <effects-menu>
+                    <submenu _name="Al"/>
+                </effects-menu>
+    </effect>
+    <script>
+        <command reldir="extensions" interpreter="python">areacog.py</command>
+    </script>
+</inkscape-extension>
